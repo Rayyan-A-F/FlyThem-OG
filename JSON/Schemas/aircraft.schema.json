@@ -1,0 +1,79 @@
+{
+    "title": "Aircraft Database",
+    "type": "object",
+
+    "properties": {
+        "aircraft": {
+            "type": "array",
+
+            "items": {
+                "type": "object",
+
+                "properties": {
+                    "id": {
+                        "type": "string"
+                    },
+
+                    "aisle": {
+                        "type": "string",
+                        "enum": [
+                            "Narrowbody",
+                            "Widebody"
+                        ]
+                    },
+
+                    "manufacturer": {
+                        "type": "string"
+                    },
+
+                    "model": {
+                        "type": "string"
+                    },
+
+                    "variant": {
+                        "type": "string"
+                    },
+
+                    "range_km": {
+                        "type": "number",
+                        "minimum": 0
+                    },
+
+                    "seating": {
+                        "type": "integer",
+                        "minimum": 1
+                    },
+
+                    "price": {
+                        "type": "number",
+                        "minimum": 0
+                    },
+                    "extraCosts": {
+                        "type": "number",
+                        "minimum": 0
+                    }
+                },
+
+                "required": [
+                    "id",
+                    "aisle",
+                    "manufacturer",
+                    "model",
+                    "variant",
+                    "range_km",
+                    "seating",
+                    "price",
+                    "extraCosts"
+                ],
+
+                "additionalProperties": false
+            }
+        }
+    },
+
+    "required": [
+        "aircraft"
+    ],
+
+    "additionalProperties": false
+}

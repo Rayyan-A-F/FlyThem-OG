@@ -1,0 +1,235 @@
+{
+    "aircraft": [
+        {
+            "id": "A220-100",
+            "aisle": "Narrowbody",
+            "manufacturer": "Airbus",
+            "model": "A220",
+            "variant": "A220-100",
+            "range_km": 6297,
+            "seating": 135,
+            "price": 81.5,
+            "extraCosts": 0.05
+        },
+        {
+            "id": "A220-300",
+            "aisle": "Narrowbody",
+            "manufacturer": "Airbus",
+            "model": "A220",
+            "variant": "A220-300",
+            "range_km": 6390,
+            "seating": 160,
+            "price": 91.5,
+            "extraCosts": 0.05
+        },
+        {
+            "id": "A319neo",
+            "aisle": "Narrowbody",
+            "manufacturer": "Airbus",
+            "model": "A320neo",
+            "variant": "A319neo",
+            "range_km": 6950,
+            "seating": 160,
+            "price": 101.5,
+            "extraCosts": 0.06
+        },
+        {
+            "id": "A320neo",
+            "aisle": "Narrowbody",
+            "manufacturer": "Airbus",
+            "model": "A320neo",
+            "variant": "A320neo",
+            "range_km": 6300,
+            "seating": 194,
+            "price": 110.6,
+            "extraCosts": 0.06
+        },
+        {
+            "id": "A321neo",
+            "aisle": "Narrowbody",
+            "manufacturer": "Airbus",
+            "model": "A320neo",
+            "variant": "A321neo",
+            "range_km": 7400,
+            "seating": 244,
+            "price": 129.5,
+            "extraCosts": 0.06
+        },
+        {
+            "id": "A321LR",
+            "aisle": "Narrowbody",
+            "manufacturer": "Airbus",
+            "model": "A320neo",
+            "variant": "A321LR",
+            "range_km": 7400,
+            "seating": 244,
+            "price": 129.5,
+            "extraCosts": 0.06
+        },
+        {
+            "id": "A321XLR",
+            "aisle": "Narrowbody",
+            "manufacturer": "Airbus",
+            "model": "A320neo",
+            "variant": "A321XLR",
+            "range_km": 8700,
+            "seating": 244,
+            "price": 129.5,
+            "extraCosts": 0.06
+        },
+        {
+            "id": "A330-800",
+            "aisle": "Widebody",
+            "manufacturer": "Airbus",
+            "model": "A330neo",
+            "variant": "A330-800",
+            "range_km": 15094,
+            "seating": 406,
+            "price": 259.9,
+            "extraCosts": 0.06
+        },
+        {
+            "id": "A330-900",
+            "aisle": "Widebody",
+            "manufacturer": "Airbus",
+            "model": "A330neo",
+            "variant": "A330-900",
+            "range_km": 13334,
+            "seating": 465,
+            "price": 296.4,
+            "extraCosts": 0.06
+        },
+        {
+            "id": "A350-900",
+            "aisle": "Widebody",
+            "manufacturer": "Airbus",
+            "model": "A350",
+            "variant": "A350-900",
+            "range_km": 15750,
+            "seating": 440,
+            "price": 317.4,
+            "extraCosts": 0.06
+        },
+        {
+            "id": "A350-1000",
+            "aisle": "Widebody",
+            "manufacturer": "Airbus",
+            "model": "A350",
+            "variant": "A350-1000",
+            "range_km": 16100,
+            "seating": 480,
+            "price": 366.5,
+            "extraCosts": 0.06
+        },
+        {
+            "id": "737-8",
+            "aisle": "Narrowbody",
+            "manufacturer": "Boeing",
+            "model": "737 MAX",
+            "variant": "737-8",
+            "range_km": 6480,
+            "seating": 210,
+            "price": 121.6,
+            "extraCosts": 0.05
+        },
+        {
+            "id": "737-8-200",
+            "aisle": "Narrowbody",
+            "manufacturer": "Boeing",
+            "model": "737 MAX",
+            "variant": "737-8-200",
+            "range_km": 6250,
+            "seating": 210,
+            "price": 124.8,
+            "extraCosts": 0.05
+        },
+        {
+            "id": "737-9",
+            "aisle": "Narrowbody",
+            "manufacturer": "Boeing",
+            "model": "737 MAX",
+            "variant": "737-9",
+            "range_km": 6110,
+            "seating": 220,
+            "price": 128.9,
+            "extraCosts": 0.05
+        },
+        {
+            "id": "787-8",
+            "aisle": "Widebody",
+            "manufacturer": "Boeing",
+            "model": "787 Dreamliner",
+            "variant": "787-8",
+            "range_km": 14820,
+            "seating": 275,
+            "price": 248.3,
+            "extraCosts": 0.06
+        },
+        {
+            "id": "787-9",
+            "aisle": "Widebody",
+            "manufacturer": "Boeing",
+            "model": "787 Dreamliner",
+            "variant": "787-9",
+            "range_km": 15370,
+            "seating": 325,
+            "price": 292.5,
+            "extraCosts": 0.06
+        },
+        {
+            "id": "787-10",
+            "aisle": "Widebody",
+            "manufacturer": "Boeing",
+            "model": "787 Dreamliner",
+            "variant": "787-10",
+            "range_km": 13890,
+            "seating": 375,
+            "price": 338.4,
+            "extraCosts": 0.06
+        },
+        {
+            "id": "777-200ER",
+            "aisle": "Widebody",
+            "manufacturer": "Boeing",
+            "model": "777",
+            "variant": "777-200ER",
+            "range_km": 13600,
+            "seating": 440,
+            "price": 306.6,
+            "extraCosts": 0.06
+        },
+        {
+            "id": "777-200LR",
+            "aisle": "Widebody",
+            "manufacturer": "Boeing",
+            "model": "777",
+            "variant": "777-200LR",
+            "range_km": 15840,
+            "seating": 317,
+            "price": 346.9,
+            "extraCosts": 0.06
+        },
+        {
+            "id": "777-300",
+            "aisle": "Widebody",
+            "manufacturer": "Boeing",
+            "model": "777",
+            "variant": "777-300",
+            "range_km": 11135,
+            "seating": 550,
+            "price": 320.2,
+            "extraCosts": 0.06
+        },
+        {
+            "id": "777-300ER",
+            "aisle": "Widebody",
+            "manufacturer": "Boeing",
+            "model": "777",
+            "variant": "777-300ER",
+            "range_km": 13650,
+            "seating": 396,
+            "price": 375.5,
+            "extraCosts": 0.06
+        }
+    ]
+}

@@ -1,0 +1,1041 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background-color: oklch(12% 0.02 275);
+    --surface: oklch(23% 0.035 275);
+    --border: oklch(34% 0.035 275);
+
+    --text: oklch(94% 0.01 275);
+    --text-muted: oklch(72% 0.015 275);
+
+    --primary-100: oklch(94% 0.04 275);
+    --primary-200: oklch(86% 0.07 275);
+    --primary-300: oklch(77% 0.12 275);
+    --primary-400: oklch(67% 0.17 275);
+    --primary-500: oklch(59% 0.20 275);
+    --primary-600: oklch(50% 0.18 275);
+    --primary-700: oklch(41% 0.16 275);
+    --primary-800: oklch(33% 0.13 275);
+    --primary-900: oklch(25% 0.10 275);
+
+    --accent: oklch(74% 0.17 95);
+
+    --success: oklch(68% 0.18 147);
+    --warning: oklch(78% 0.16 92);
+    --error: oklch(59% 0.20 27);
+
+    --shadow-sm:
+        0 2px 8px oklch(0% 0 0 / 0.18),
+        0 1px 3px oklch(0% 0 0 / 0.12);
+
+    --shadow-md:
+        0 8px 24px oklch(0% 0 0 / 0.22),
+        0 3px 8px oklch(0% 0 0 / 0.16);
+
+    --shadow-lg:
+        0 16px 40px oklch(0% 0 0 / 0.28),
+        0 6px 16px oklch(0% 0 0 / 0.20);
+
+    --glow-primary:
+        0 0 8px oklch(59% 0.20 275 / 0.40),
+        0 0 24px oklch(59% 0.20 275 / 0.25),
+        0 0 48px oklch(59% 0.20 275 / 0.12);
+
+    --glow-accent:
+        0 0 8px oklch(74% 0.17 95 / 0.40),
+        0 0 24px oklch(74% 0.17 95 / 0.25),
+        0 0 48px oklch(74% 0.17 95 / 0.12);
+
+    --glow-success:
+        0 0 8px oklch(68% 0.18 147 / 0.35),
+        0 0 24px oklch(68% 0.18 147 / 0.22),
+        0 0 48px oklch(68% 0.18 147 / 0.10);
+
+    --glow-error:
+        0 0 8px oklch(59% 0.20 27 / 0.35),
+        0 0 24px oklch(59% 0.20 27 / 0.22),
+        0 0 48px oklch(59% 0.20 27 / 0.10);
+
+    --focus-ring:
+        0 0 0 3px oklch(59% 0.20 275 / 0.30);
+}  
+
+html {
+    min-height: 100%;
+}
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+    color: var(--text);
+    background-color: var(--background-color);
+}
+
+.science-gothic {
+    font-family: "Science Gothic", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+header {
+    padding: 2rem;
+
+    text-align: center;
+
+    background-color: var(--surface);
+
+    border-bottom: 1px solid var(--border);
+
+    box-shadow: var(--shadow-md);
+}
+
+header h1 {
+    color: var(--primary-300);
+
+    font-size: 2.5rem;
+    font-weight: 700;
+
+    text-shadow:
+        0 0 8px oklch(59% 0.20 275 / 0.35),
+        0 0 24px oklch(59% 0.20 275 / 0.20);
+}
+
+header h3 {
+    margin-top: 0.5rem;
+
+    color: var(--text-muted);
+
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.airline-name-display,
+.airline-hub-display {
+    color: var(--primary-200);
+    font-weight: 700;
+}
+
+.airline-name-display {
+    text-shadow:
+        0 0 8px oklch(59% 0.20 275 / 0.25);
+}
+
+.airline-hub-display {
+    color: var(--accent);
+    text-shadow:
+        0 0 8px oklch(74% 0.17 95 / 0.25);
+}
+
+main {
+    width: min(800px, 90%);
+    margin: 0 auto;
+    padding: 3rem 0;
+
+    flex: 1;
+}
+
+.home-wel {
+    padding: 1rem 1.25rem;
+
+    color: var(--text);
+
+    background-color: var(--surface);
+
+    border: 1px solid var(--border);
+    border-radius: 10px;
+
+    text-align: center;
+
+    box-shadow: var(--shadow-sm);
+}
+
+main h2 {
+    margin-bottom: 2rem;
+
+    color: var(--text);
+
+    text-align: center;
+}
+
+.start-card {
+    margin-bottom: 1.5rem;
+    padding: 1.75rem;
+
+    background-color: var(--surface);
+
+    border: 1px solid var(--border);
+    border-radius: 12px;
+
+    box-shadow: var(--shadow-md);
+
+    transition:
+        transform 180ms ease,
+        border-color 180ms ease,
+        box-shadow 180ms ease;
+}
+
+.start-card:hover {
+    transform: translateY(-2px);
+
+    border-color: var(--primary-600);
+
+    box-shadow:
+        var(--shadow-md),
+        var(--glow-primary);
+}
+
+.start-card p {
+    margin-bottom: 1.25rem;
+
+    color: var(--text);
+
+    line-height: 1.6;
+}
+
+.warning {
+    color: var(--warning);
+
+    font-weight: 700;
+}
+
+.btn {
+    margin-bottom: 1.25rem;
+    padding: 0.7rem 1.2rem;
+
+    color: var(--primary-100);
+    background-color: var(--primary-500);
+
+    border: 1px solid var(--primary-400);
+    border-radius: 8px;
+
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    box-shadow: var(--shadow-sm);
+
+    transition:
+        transform 150ms ease,
+        background-color 150ms ease,
+        border-color 150ms ease,
+        box-shadow 150ms ease;
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+
+    background-color: var(--primary-400);
+    border-color: var(--primary-300);
+
+    box-shadow:
+        var(--shadow-sm),
+        var(--glow-primary);
+}
+
+.btn:active {
+    transform: translateY(0);
+
+    background-color: var(--primary-600);
+}
+
+.btn:focus-visible {
+    outline: none;
+
+    box-shadow:
+        var(--shadow-sm),
+        var(--focus-ring);
+}
+
+.setup-form {
+    width: 100%;
+}
+
+.setup-form fieldset {
+    padding: 2rem;
+
+    background-color: var(--surface);
+
+    border: 1px solid var(--border);
+    border-radius: 12px;
+
+    box-shadow: var(--shadow-md);
+}
+
+.setup-form legend {
+    padding: 0 0.75rem;
+
+    color: var(--primary-300);
+
+    font-family: "Science Gothic", sans-serif;
+    font-weight: 600;
+}
+
+.setup-form label {
+    display: inline-block;
+
+    margin-bottom: 0.5rem;
+
+    color: var(--text);
+    font-weight: 600;
+}
+
+.setup-form input[type="text"],
+.setup-form select {
+    width: 100%;
+    padding: 0.75rem 0.9rem;
+
+    color: var(--text);
+    background-color: var(--background-color);
+
+    border: 1px solid var(--border);
+    border-radius: 8px;
+
+    font-family: inherit;
+    font-size: 1rem;
+
+    transition:
+        border-color 150ms ease,
+        box-shadow 150ms ease;
+}
+
+.setup-form input[type="text"]::placeholder {
+    color: var(--text-muted);
+}
+
+.setup-form input[type="text"]:focus,
+.setup-form select:focus {
+    outline: none;
+
+    border-color: var(--primary-400);
+
+    box-shadow: var(--focus-ring);
+}
+
+.setup-form select {
+    cursor: pointer;
+}
+
+.setup-form input[type="submit"],
+.setup-form input[type="reset"] {
+    padding: 0.7rem 1.2rem;
+
+    border-radius: 8px;
+
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        transform 150ms ease,
+        background-color 150ms ease,
+        border-color 150ms ease,
+        box-shadow 150ms ease;
+}
+
+.setup-form input[type="submit"] {
+    color: var(--primary-100);
+    background-color: var(--primary-500);
+
+    border: 1px solid var(--primary-400);
+
+    box-shadow: var(--shadow-sm);
+}
+
+.setup-form input[type="submit"]:hover {
+    transform: translateY(-1px);
+
+    background-color: var(--primary-400);
+    border-color: var(--primary-300);
+
+    box-shadow:
+        var(--shadow-sm),
+        var(--glow-primary);
+}
+
+.setup-form input[type="submit"]:active {
+    transform: translateY(0);
+
+    background-color: var(--primary-600);
+}
+
+.setup-form input[type="reset"] {
+    margin-left: 0.5rem;
+
+    color: var(--text);
+    background-color: transparent;
+
+    border: 1px solid var(--border);
+}
+
+.setup-form input[type="reset"]:hover {
+    background-color: var(--surface);
+
+    border-color: var(--primary-600);
+
+    box-shadow: var(--shadow-sm);
+}
+
+.setup-form input[type="submit"]:focus-visible,
+.setup-form input[type="reset"]:focus-visible {
+    outline: none;
+
+    box-shadow:
+        var(--shadow-sm),
+        var(--focus-ring);
+}
+
+.aircraft-catalog {
+    margin-top: 2rem;
+    padding: 1.5rem;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+
+    background-color: var(--surface);
+
+    border: 1px solid var(--border);
+    border-radius: 12px;
+
+    box-shadow: var(--shadow-md);
+}
+
+.aircraft-item {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, auto);
+
+    gap: 0.75rem;
+
+    padding: 1.25rem;
+
+    background-color: var(--background-color);
+
+    border: 1px solid var(--border);
+    border-radius: 10px;
+
+    box-shadow: var(--shadow-sm);
+
+    transition:
+        transform 180ms ease,
+        border-color 180ms ease,
+        box-shadow 180ms ease;
+}
+
+.aircraft-item:hover {
+    transform: translateY(-3px);
+
+    border-color: var(--primary-600);
+
+    box-shadow:
+        var(--shadow-md),
+        var(--glow-primary);
+}
+
+.aircraft-header {
+    grid-column: 1 / 5;
+    grid-row: 1 / 2;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 1rem;
+
+    padding-bottom: 0.75rem;
+
+    border-bottom: 1px solid var(--border);
+}
+
+.aircraft-name {
+    color: var(--primary-200);
+
+    font-family: "Science Gothic", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.aircraft-type {
+    padding: 0.3rem 0.6rem;
+
+    color: var(--accent);
+
+    background-color: oklch(74% 0.17 95 / 0.10);
+
+    border: 1px solid oklch(74% 0.17 95 / 0.25);
+    border-radius: 6px;
+
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+.aircraft-manufacturer {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+}
+
+.aircraft-capacity {
+    grid-column: 3 / 5;
+    grid-row: 2 / 3;
+}
+
+.aircraft-range {
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+}
+
+.aircraft-cost {
+    grid-column: 1 / 5;
+    grid-row: 5 / 6;
+
+    padding-top: 0.75rem;
+
+    color: var(--primary-300);
+
+    border-top: 1px solid var(--border);
+
+    font-weight: 700;
+
+    text-shadow:
+        0 0 8px oklch(59% 0.20 275 / 0.25);
+}
+
+.aircraft-buy-button {
+    grid-column: 1 / 5;
+    grid-row: 6 / 7;
+    width: 100%;
+    padding: 0.7rem 1rem;
+    
+    color: var(--primary-100);
+    background-color: var(--primary-500);
+    
+    border: 1px solid var(--primary-400);
+    border-radius: 8px;
+    
+    font-family: inherit;
+    font-size: 0.95rem;
+    font-weight: 700;
+    
+    cursor: pointer;
+    
+    box-shadow: var(--shadow-sm);
+    
+    transition:
+        transform 150ms ease,
+        background-color 150ms ease,
+        border-color 150ms ease,
+        box-shadow 150ms ease;
+}
+
+.aircraft-buy-button:hover {
+    transform: translateY(-2px);
+
+    background-color: var(--primary-400);
+    border-color: var(--primary-300);
+
+    box-shadow:
+        var(--shadow-sm),
+        var(--glow-primary);
+}
+
+.aircraft-buy-button:active {
+    transform: translateY(0);
+
+    background-color: var(--primary-600);
+}
+
+.aircraft-buy-button:focus-visible {
+    outline: none;
+
+    box-shadow:
+        var(--shadow-sm),
+        var(--focus-ring);
+}
+
+.aircraft-manufacturer,
+.aircraft-capacity,
+.aircraft-range,
+.aircraft-cost {
+    margin: 0;
+
+    color: var(--text-muted);
+
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+nav {
+    padding: 1rem;
+    margin-top: 0.75rem;
+
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+
+    border-radius: 10px;
+    box-shadow: var(--shadow-sm);
+}
+
+nav ul {
+    display: flex;
+    gap: 1.5rem;
+
+    list-style-type: none;
+    width: 100%;
+    
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    padding: 0.5rem 0.75rem;
+
+    color: var(--text);
+
+    border-radius: 6px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background-color 150ms ease,
+        color 150ms ease,
+        box-shadow 150ms ease;
+}
+
+nav ul li:hover {
+    color: var(--primary-200);
+
+    background-color: oklch(59% 0.20 275 / 0.10);
+
+    box-shadow:
+        0 0 8px oklch(59% 0.20 275 / 0.25);
+}
+
+nav ul li a {
+    color: inherit;
+
+    text-decoration: none;
+}
+
+.custom-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 300px;
+    max-width: 450px;
+    padding: 2rem;
+    color: var(--text);
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    box-shadow:
+        var(--shadow-lg),
+        var(--glow-error);
+    z-index: 1000;
+}
+
+.popup-title {
+    margin-bottom: 1rem;
+    color: var(--error);
+    font-family: "Science Gothic", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-shadow:
+        0 0 8px oklch(59% 0.20 27 / 0.35),
+        0 0 24px oklch(59% 0.20 27 / 0.20);
+}
+
+.popup-message {
+    margin-bottom: 1.5rem;
+    color: var(--text);
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.popup-close {
+    padding: 0.6rem 1rem;
+    color: var(--text);
+    background-color: var(--background-color);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.popup-close:hover {
+    border-color: var(--error);
+    color: var(--error);
+}
+
+.currentFleetBox {
+    margin-top: 2rem;
+    padding: 1.5rem;
+
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+
+    box-shadow: var(--shadow-md);
+}
+
+.currentFleetDisplayer {
+    width: 100%;
+    margin: 0;
+    padding: 0.75rem 1rem;
+
+    background: transparent;
+    border: none;
+
+    color: var(--text-muted);
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: left;
+
+    cursor: pointer;
+}
+
+.currentFleetDisplayer:hover {
+    color: var(--text);
+}
+
+.currentFleet {
+    display: none;
+
+    margin-top: 1rem;
+    padding: 1rem;
+
+    background-color: var(--background-color);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+}
+
+.currentFleet.open {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.fleet-item {
+    padding: 1rem;
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+}
+
+.fleet-aircraft-name {
+    margin-bottom: 0.75rem;
+    color: var(--text);
+    font-family: "Science Gothic", sans-serif;
+    font-size: 1.1rem;
+}
+
+.fleet-item p {
+    margin: 0.35rem 0;
+    color: var(--text-muted);
+}
+
+.fleet-empty {
+    margin: 0;
+    color: var(--text-muted);
+    text-align: center;
+}
+
+.flightPlan {
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: var(--shadow-md);
+    color: var(--text);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.flightPlan h2 {
+    margin: 0 0 1.5rem;
+    color: var(--primary-200);
+    font-size: 1.75rem;
+    text-align: center;
+    text-shadow: var(--glow-primary);
+}
+
+.flightPlanForm {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.flightPlanForm p {
+    margin: 0;
+}
+
+.flightPlanForm p:first-of-type {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.startHub {
+    background-color: var(--background-color);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 0.8rem 1rem;
+    color: var(--primary-200);
+    font-weight: 600;
+    box-shadow: var(--shadow-sm);
+}
+
+.flightPlanForm label {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-top: 0.5rem;
+}
+
+.flightPlanForm select {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    background-color: var(--background-color);
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    font: inherit;
+    cursor: pointer;
+    outline: none;
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        background-color 0.2s ease;
+}
+
+.flightPlanForm select:hover {
+    border-color: var(--primary-600);
+}
+
+.flightPlanForm select:focus {
+    border-color: var(--primary-500);
+    box-shadow: var(--focus-ring), var(--glow-primary);
+}
+
+.flightPlanForm select option {
+    background-color: var(--surface);
+    color: var(--text);
+}
+
+.flightPlanForm button {
+    padding: 0.8rem 1.25rem;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+    transition:
+        transform 0.15s ease,
+        box-shadow 0.2s ease,
+        background-color 0.2s ease;
+}
+
+.flightPlanForm button:hover {
+    transform: translateY(-2px);
+}
+
+.flightPlanForm button:active {
+    transform: translateY(0);
+}
+
+.flightPlanForm button[type="reset"] {
+    margin-top: 1rem;
+    background-color: var(--background-color);
+    color: var(--text-muted);
+    border-color: var(--border);
+    box-shadow: var(--shadow-sm);
+}
+
+.flightPlanForm button[type="reset"]:hover {
+    color: var(--text);
+    border-color: var(--primary-600);
+}
+
+.flightPlanForm button[type="submit"] {
+    background-color: var(--primary-500);
+    color: var(--primary-100);
+    box-shadow: var(--shadow-sm);
+}
+
+.flightPlanForm button[type="submit"]:hover {
+    background-color: var(--primary-600);
+    box-shadow: var(--glow-primary);
+}
+
+.flightPlanForm button:focus-visible {
+    outline: none;
+    box-shadow: var(--focus-ring);
+}
+
+.time-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.pause-game,
+.advance-day {
+    padding: 8px 14px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background-color: var(--surface);
+    color: var(--text);
+    cursor: pointer;
+    box-shadow: var(--shadow-sm);
+}
+
+.pause-game:hover,
+.advance-day:hover:not(:disabled) {
+    box-shadow: var(--glow-primary);
+}
+
+.advance-day:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.advance-day-cooldown {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+.home-wel {
+    font-family: "Science Gothic", sans-serif;
+    font-size: 2rem;
+    color: var(--primary-200);
+    text-shadow: var(--glow-primary);
+}
+
+.updateSection {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: var(--shadow-md);
+}
+
+.releaseHeading {
+    color: var(--primary-200);
+    text-shadow: var(--glow-primary);
+}
+
+.updateSection .listHeading {
+    color: var(--accent);
+    font-weight: 700;
+}
+
+.updateSection li {
+    color: var(--text-muted);
+}
+
+.game-version {
+    color: var(--primary-300);
+    font-family: "Science Gothic", sans-serif;
+    font-weight: 600;
+}
+
+.update-page {
+    color: var(--text-muted);
+}
+
+.update-page a {
+    color: var(--primary-300);
+}
+
+.update-page a:hover {
+    color: var(--primary-200);
+    text-shadow: var(--glow-primary);
+}
+
+footer {
+    padding: 2rem;
+
+    color: var(--text-muted);
+
+    text-align: center;
+
+    background-color: var(--surface);
+
+    border-top: 1px solid var(--border);
+
+    box-shadow: var(--shadow-md);
+}
+
+footer p,
+footer h4 {
+    margin-bottom: 0.75rem;
+}
+
+footer a {
+    color: var(--primary-300);
+
+    text-decoration: none;
+
+    transition:
+        color 150ms ease,
+        text-shadow 150ms ease;
+}
+
+footer a:hover {
+    color: var(--primary-200);
+
+    text-shadow:
+        0 0 8px oklch(59% 0.20 275 / 0.35),
+        0 0 24px oklch(59% 0.20 275 / 0.20);
+}
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 1.5rem;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    main {
+        width: 92%;
+        padding: 2rem 0;
+    }
+
+    .start-card {
+        padding: 1.5rem;
+    }
+
+    footer {
+        padding: 1.5rem;
+    }
+
+}

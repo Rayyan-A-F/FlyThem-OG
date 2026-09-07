@@ -1,0 +1,68 @@
+{
+    "title": "Airports",
+    "type": "object",
+    "additionalProperties": false,
+
+    "properties": {
+        "airports": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "additionalProperties": false,
+
+                "properties": {
+                    "iata": {
+                        "type": "string",
+                        "pattern": "^[A-Z]{3}$"
+                    },
+
+                    "icao": {
+                        "type": "string",
+                        "pattern": "^[A-Z]{4}$"
+                    },
+
+                    "name": {
+                        "type": "string",
+                        "minLength": 1
+                    },
+
+                    "lat": {
+                        "type": "number",
+                        "minimum": -90,
+                        "maximum": 90
+                    },
+
+                    "lon": {
+                        "type": "number",
+                        "minimum": -180,
+                        "maximum": 180
+                    },
+
+                    "landing_fee": {
+                        "type": "number",
+                        "minimum": 0
+                    },
+
+                    "longest_runway": {
+                        "type": "number",
+                        "minimum": 0
+                    }
+                },
+
+                "required": [
+                    "iata",
+                    "icao",
+                    "name",
+                    "lat",
+                    "lon",
+                    "landing_fee",
+                    "longest_runway"
+                ]
+            }
+        }
+    },
+
+    "required": [
+        "airports"
+    ]
+}

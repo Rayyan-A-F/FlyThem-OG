@@ -1,0 +1,409 @@
+{
+    "airports": [
+        {
+            "iata": "DXB",
+            "icao": "OMDB",
+            "name": "Dubai International Airport",
+            "lat": 25.2532,
+            "lon": 55.3657,
+            "landing_fee": 2500,
+            "longest_runway": 4448
+        },
+        {
+            "iata": "JFK",
+            "icao": "KJFK",
+            "name": "John F. Kennedy International Airport",
+            "lat": 40.6413,
+            "lon": -73.7781,
+            "landing_fee": 3000,
+            "longest_runway": 4442
+        },
+        {
+            "iata": "LHR",
+            "icao": "EGLL",
+            "name": "Heathrow Airport",
+            "lat": 51.4700,
+            "lon": -0.4543,
+            "landing_fee": 3500,
+            "longest_runway": 3902
+        },
+        {
+            "iata": "SIN",
+            "icao": "WSSS",
+            "name": "Singapore Changi Airport",
+            "lat": 1.3644,
+            "lon": 103.9915,
+            "landing_fee": 3200,
+            "longest_runway": 4000
+        },
+        {
+            "iata": "GRU",
+            "icao": "SBGR",
+            "name": "São Paulo/Guarulhos International Airport",
+            "lat": -23.4356,
+            "lon": -46.4731,
+            "landing_fee": 2200,
+            "longest_runway": 3700
+        },
+        {
+            "iata": "CDG",
+            "icao": "LFPG",
+            "name": "Paris Charles de Gaulle Airport",
+            "lat": 49.0097,
+            "lon": 2.5479,
+            "landing_fee": 3000,
+            "longest_runway": 4215
+        },
+        {
+            "iata": "HND",
+            "icao": "RJTT",
+            "name": "Tokyo Haneda Airport",
+            "lat": 35.5494,
+            "lon": 139.7798,
+            "landing_fee": 3300,
+            "longest_runway": 3360
+        },
+        {
+            "iata": "FRA",
+            "icao": "EDDF",
+            "name": "Frankfurt Airport",
+            "lat": 50.0379,
+            "lon": 8.5622,
+            "landing_fee": 3200,
+            "longest_runway": 4000
+        },
+        {
+            "iata": "AMS",
+            "icao": "EHAM",
+            "name": "Amsterdam Airport Schiphol",
+            "lat": 52.3105,
+            "lon": 4.7683,
+            "landing_fee": 3300,
+            "longest_runway": 3800
+        },
+        {
+            "iata": "MAD",
+            "icao": "LEMD",
+            "name": "Adolfo Suárez Madrid-Barajas Airport",
+            "lat": 40.4983,
+            "lon": -3.5676,
+            "landing_fee": 2400,
+            "longest_runway": 4100
+        },
+        {
+            "iata": "BCN",
+            "icao": "LEBL",
+            "name": "Barcelona-El Prat Airport",
+            "lat": 41.2974,
+            "lon": 2.0833,
+            "landing_fee": 2300,
+            "longest_runway": 3352
+        },
+        {
+            "iata": "FCO",
+            "icao": "LIRF",
+            "name": "Leonardo da Vinci–Fiumicino Airport",
+            "lat": 41.8003,
+            "lon": 12.2389,
+            "landing_fee": 2500,
+            "longest_runway": 3902
+        },
+        {
+            "iata": "IST",
+            "icao": "LTFM",
+            "name": "Istanbul Airport",
+            "lat": 41.2753,
+            "lon": 28.7519,
+            "landing_fee": 2600,
+            "longest_runway": 4100
+        },
+        {
+            "iata": "DOH",
+            "icao": "OTHH",
+            "name": "Hamad International Airport",
+            "lat": 25.2731,
+            "lon": 51.6081,
+            "landing_fee": 2800,
+            "longest_runway": 4850
+        },
+        {
+            "iata": "AUH",
+            "icao": "OMAA",
+            "name": "Zayed International Airport",
+            "lat": 24.4330,
+            "lon": 54.6511,
+            "landing_fee": 2300,
+            "longest_runway": 4100
+        },
+        {
+            "iata": "RUH",
+            "icao": "OERK",
+            "name": "King Khalid International Airport",
+            "lat": 24.9576,
+            "lon": 46.6988,
+            "landing_fee": 2100,
+            "longest_runway": 4205
+        },
+        {
+            "iata": "DEL",
+            "icao": "VIDP",
+            "name": "Indira Gandhi International Airport",
+            "lat": 28.5562,
+            "lon": 77.1000,
+            "landing_fee": 1800,
+            "longest_runway": 4430
+        },
+        {
+            "iata": "BOM",
+            "icao": "VABB",
+            "name": "Chhatrapati Shivaji Maharaj International Airport",
+            "lat": 19.0896,
+            "lon": 72.8656,
+            "landing_fee": 1900,
+            "longest_runway": 3445
+        },
+        {
+            "iata": "BKK",
+            "icao": "VTBS",
+            "name": "Suvarnabhumi Airport",
+            "lat": 13.6900,
+            "lon": 100.7501,
+            "landing_fee": 2000,
+            "longest_runway": 4000
+        },
+        {
+            "iata": "ICN",
+            "icao": "RKSI",
+            "name": "Incheon International Airport",
+            "lat": 37.4602,
+            "lon": 126.4407,
+            "landing_fee": 2500,
+            "longest_runway": 3750
+        },
+        {
+            "iata": "PEK",
+            "icao": "ZBAA",
+            "name": "Beijing Capital International Airport",
+            "lat": 40.0799,
+            "lon": 116.6031,
+            "landing_fee": 2400,
+            "longest_runway": 3800
+        },
+        {
+            "iata": "PVG",
+            "icao": "ZSPD",
+            "name": "Shanghai Pudong International Airport",
+            "lat": 31.1443,
+            "lon": 121.8083,
+            "landing_fee": 2300,
+            "longest_runway": 4000
+        },
+        {
+            "iata": "SYD",
+            "icao": "YSSY",
+            "name": "Sydney Kingsford Smith Airport",
+            "lat": -33.9399,
+            "lon": 151.1753,
+            "landing_fee": 3000,
+            "longest_runway": 3962
+        },
+        {
+            "iata": "MEL",
+            "icao": "YMML",
+            "name": "Melbourne Airport",
+            "lat": -37.6690,
+            "lon": 144.8410,
+            "landing_fee": 2700,
+            "longest_runway": 3657
+        },
+        {
+            "iata": "YYZ",
+            "icao": "CYYZ",
+            "name": "Toronto Pearson International Airport",
+            "lat": 43.6777,
+            "lon": -79.6248,
+            "landing_fee": 2700,
+            "longest_runway": 3389
+        },
+        {
+            "iata": "MEX",
+            "icao": "MMMX",
+            "name": "Mexico City International Airport",
+            "lat": 19.4363,
+            "lon": -99.0721,
+            "landing_fee": 2200,
+            "longest_runway": 3900
+        },
+        {
+            "iata": "JNB",
+            "icao": "FAOR",
+            "name": "O. R. Tambo International Airport",
+            "lat": -26.1367,
+            "lon": 28.2411,
+            "landing_fee": 1800,
+            "longest_runway": 4421
+        },
+        {
+            "iata": "ORD",
+            "icao": "KORD",
+            "name": "Chicago O'Hare International Airport",
+            "lat": 41.9786,
+            "lon": -87.9048,
+            "landing_fee": 2900,
+            "longest_runway": 3962
+        },
+        {
+            "iata": "LAX",
+            "icao": "KLAX",
+            "name": "Los Angeles International Airport",
+            "lat": 33.9425,
+            "lon": -118.4080,
+            "landing_fee": 3100,
+            "longest_runway": 3682
+        },
+        {
+            "iata": "SFO",
+            "icao": "KSFO",
+            "name": "San Francisco International Airport",
+            "lat": 37.6198,
+            "lon": -122.3748,
+            "landing_fee": 3000,
+            "longest_runway": 3618
+        },
+        {
+            "iata": "ATL",
+            "icao": "KATL",
+            "name": "Hartsfield-Jackson Atlanta International Airport",
+            "lat": 33.6367,
+            "lon": -84.4281,
+            "landing_fee": 2700,
+            "longest_runway": 3776
+        },
+        {
+            "iata": "MIA",
+            "icao": "KMIA",
+            "name": "Miami International Airport",
+            "lat": 25.7960,
+            "lon": -80.2898,
+            "landing_fee": 2800,
+            "longest_runway": 3962
+        },
+        {
+            "iata": "DFW",
+            "icao": "KDFW",
+            "name": "Dallas Fort Worth International Airport",
+            "lat": 32.8968,
+            "lon": -97.0380,
+            "landing_fee": 2600,
+            "longest_runway": 4084
+        },
+        {
+            "iata": "SEA",
+            "icao": "KSEA",
+            "name": "Seattle-Tacoma International Airport",
+            "lat": 47.4479,
+            "lon": -122.3103,
+            "landing_fee": 2600,
+            "longest_runway": 3627
+        },
+        {
+            "iata": "BOS",
+            "icao": "KBOS",
+            "name": "Boston Logan International Airport",
+            "lat": 42.3620,
+            "lon": -71.0079,
+            "landing_fee": 2800,
+            "longest_runway": 3073
+        },
+        {
+            "iata": "IAD",
+            "icao": "KIAD",
+            "name": "Washington Dulles International Airport",
+            "lat": 38.9445,
+            "lon": -77.4558,
+            "landing_fee": 2500,
+            "longest_runway": 3505
+        },
+        {
+            "iata": "HKG",
+            "icao": "VHHH",
+            "name": "Hong Kong International Airport",
+            "lat": 22.3080,
+            "lon": 113.9185,
+            "landing_fee": 2900,
+            "longest_runway": 3800
+        },
+        {
+            "iata": "KUL",
+            "icao": "WMKK",
+            "name": "Kuala Lumpur International Airport",
+            "lat": 2.7456,
+            "lon": 101.7099,
+            "landing_fee": 2100,
+            "longest_runway": 4124
+        },
+        {
+            "iata": "CGK",
+            "icao": "WIII",
+            "name": "Soekarno-Hatta International Airport",
+            "lat": -6.1256,
+            "lon": 106.6559,
+            "landing_fee": 1900,
+            "longest_runway": 3660
+        },
+        {
+            "iata": "BNE",
+            "icao": "YBBN",
+            "name": "Brisbane Airport",
+            "lat": -27.3942,
+            "lon": 153.1218,
+            "landing_fee": 2400,
+            "longest_runway": 3545
+        },
+        {
+            "iata": "AKL",
+            "icao": "NZAA",
+            "name": "Auckland Airport",
+            "lat": -37.0082,
+            "lon": 174.7850,
+            "landing_fee": 2200,
+            "longest_runway": 3635
+        },
+        {
+            "iata": "NBO",
+            "icao": "HKJK",
+            "name": "Jomo Kenyatta International Airport",
+            "lat": -1.3192,
+            "lon": 36.9278,
+            "landing_fee": 1700,
+            "longest_runway": 4117
+        },
+        {
+            "iata": "CAI",
+            "icao": "HECA",
+            "name": "Cairo International Airport",
+            "lat": 30.1219,
+            "lon": 31.4056,
+            "landing_fee": 1800,
+            "longest_runway": 4000
+        },
+        {
+            "iata": "CMN",
+            "icao": "GMMN",
+            "name": "Mohammed V International Airport",
+            "lat": 33.3675,
+            "lon": -7.5898,
+            "landing_fee": 1700,
+            "longest_runway": 3717
+        },
+        {
+            "iata": "LOS",
+            "icao": "DNMM",
+            "name": "Murtala Muhammed International Airport",
+            "lat": 6.5774,
+            "lon": 3.3212,
+            "landing_fee": 1600,
+            "longest_runway": 2745
+        }
+    ]
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Science+Gothic:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../CSS/main.css">
+
+    <title>FlyThem™ - Setup</title>
+</head>
+
+<body>
+
+    <header>
+        <h1 class="science-gothic">FlyThem™</h1>
+    </header>
+
+    <main>
+
+        <p>
+            <strong>Welcome to FlyThem™!</strong>
+        </p>
+
+        <div>
+
+            <form action="../HTML/home.html" target="_self" class="setup-form">
+
+                <fieldset>
+
+                    <legend>Set up your airline!</legend>
+
+                    <label for="airline-name">
+                        Airline Name:
+                    </label>
+
+                    <br>
+
+                    <input type="text" name="airline-name" id="airline-name" class="airline-name"
+                        placeholder="FlyThem™ Airways" required>
+
+                    <br>
+
+                    <label for="hub-airport">
+                        Choose your hub airport:
+                    </label>
+
+                    <select name="hub-airport" id="hub-airport" class="hub-airport" required>
+                    </select>
+
+                    <br>
+
+                    <input type="submit" value="Submit">
+
+                    <input type="reset" value="Reset">
+
+                </fieldset>
+
+            </form>
+
+        </div>
+
+    </main>
+
+    <footer>
+
+        <p class="science-gothic">
+            <span class="warning">NOTE:</span>
+            The in-game landing fees aren't accurate.
+        </p>
+
+        <h4 class="science-gothic">
+            Copyright © 2026 Rayyan. All rights reserved.
+        </h4>
+
+        <p class="science-gothic">
+            GitHub ~
+            <a href="https://github.com/Rayyan-A-F">
+                My GitHub profile
+            </a>
+        </p>
+
+    </footer>
+
+    <script type="module" src="../JS/main.js"></script>
+
+</body>
+
+</html>
