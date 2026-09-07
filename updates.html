@@ -10,9 +10,9 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Science+Gothic:wght@100..900&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="../CSS/main.css">
+    <link rel="stylesheet" href="./CSS/main.css">
 
-    <title>FlyThem™ - Flight</title>
+    <title>FlyThem™ - Home</title>
 </head>
 
 <body>
@@ -34,9 +34,20 @@
             <span class="cash-display"></span>
         </h3>
         <h3>
+            Reputation:
+            <span class="reputation-display"></span>
+        </h3>
+        <h3>
             Date:
             <span class="time-display"></span>
         </h3>
+
+        <div class="time-controls">
+            <button class="pause-game">⏸ Pause</button>
+            <button class="advance-day">+1 Day</button>
+            <span class="advance-day-cooldown"></span>
+        </div>
+
         <nav>
             <ul>
                 <li><a href="./home.html">Home</a></li>
@@ -51,22 +62,33 @@
     <main>
         <p class="home-wel"><strong>Welcome to FlyThem™!</strong></p>
 
-        <div class="flightPlan">
-            <h2>Flight Plan</h2>
+        <div class="updates">
+            <section class="updateSection">
+                <h2 class="releaseHeading">Release Beta 1.0.0</h2>
 
-            <form class="flightPlanForm">
-                <p>Hub Airport:</p>
-                <p class="startHub"></p>
+                <ul class="updates">
+                    <li class="listHeading">Features ~ Initial Release</li>
+                    <li>Release Date: 2026-10-06</li>
+                    <li>Airline creation and deletion</li>
+                    <li>Airline Customization</li>
+                    <li>Aircraft Buying</li>
+                    <li>Aircraft Registration</li>
+                    <li>Fleet viewing</li>
+                    <li>Flight Scheduling</li>
+                </ul>
+            </section>
 
-                <label for="destination">Destination Airport</label>
-                <select id="destination" class="destinationChoice"></select>
+            <section class="updateSection">
+                <h2 class="releaseHeading">Release Beta 1.0.1</h2>
 
-                <label for="aircraft">Aircraft</label>
-                <select id="aircraft" class="aircraftChoice"></select>
-
-                <button type="reset">Reset</button>
-                <button type="submit">Submit</button>
-            </form>
+                <ul class="updates">
+                    <li class="listHeading">Bug Fixes</li>
+                    <li>Release Date: 2026-10-06</li>
+                    <li>Fixed a date issue</li>
+                    <li>Added dates for releases</li>
+                    <li>Added better linking</li>
+                </ul>
+            </section>
         </div>
     </main>
 
@@ -81,6 +103,9 @@
             Copyright © 2026 Rayyan. All rights reserved.
         </h4>
 
+        <p class="game-version">Version Beta 1.0.1</p>
+        <p class="update-page">Version Page: <a href="./updates.html">Updates</a></p>
+
         <p class="science-gothic">
             GitHub ~
             <a href="https://github.com/Rayyan-A-F">
@@ -90,7 +115,7 @@
 
     </footer>
 
-    <script type="module" src="../JS/main.js"></script>
+    <script type="module" src="./JS/main.js"></script>
 
 </body>
 

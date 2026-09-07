@@ -173,7 +173,7 @@ if (createNewAirline) {
         localStorage.removeItem("advanceDayCooldown");
         localStorage.removeItem("reputation");
 
-        window.location.href = "../HTML/setup.html";
+        window.location.href = "./setup.html";
     });
 }
 
@@ -187,7 +187,7 @@ if (loadAirline) {
             localStorage.setItem("hubAirport", "DXB-OMDB");
         }
 
-        window.location.href = "../HTML/home.html";
+        window.location.href = "./home.html";
     });
 }
 
@@ -204,7 +204,7 @@ if (resetAirline) {
         localStorage.removeItem("advanceDayCooldown");
         localStorage.removeItem("reputation");
 
-        window.location.href = "../HTML/start.html";
+        window.location.href = "./start.html";
     });
 }
 
@@ -250,7 +250,7 @@ if (setupForm) {
         localStorage.setItem("airlineName", airlineName);
         localStorage.setItem("hubAirport", hubAirport);
 
-        window.location.href = "../HTML/home.html";
+        window.location.href = "./home.html";
     });
 }
 
@@ -268,10 +268,10 @@ class flights {
 // Async Functions
 
 async function loadAircraft() {
-    const aircraftResponse = await fetch("../JS/JSON/aircraft.json");
+    const aircraftResponse = await fetch("./JSON/aircraft.json");
 
     const schemaResponse = await fetch(
-        "../JS/JSON/Schemas/aircraft.schema.json"
+        "./JSON/Schemas/aircraft.schema.json"
     );
 
     const aircraftData = await aircraftResponse.json();
@@ -299,10 +299,10 @@ async function loadAircraft() {
 
 
 async function loadAirports() {
-    const airportResponse = await fetch("../JS/JSON/airports.json");
+    const airportResponse = await fetch("./JSON/airports.json");
 
     const schemaResponseAir = await fetch(
-        "../JS/JSON/Schemas/airport.schema.json"
+        "./JSON/Schemas/airport.schema.json"
     );
 
     const airportData = await airportResponse.json();
