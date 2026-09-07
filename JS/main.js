@@ -746,7 +746,7 @@ function time() {
         return;
     }
 
-    const startingDate = "2026-09-06";
+    const startingDate = "2026-10-06";
 
     let gameDate = localStorage.getItem("gameDate");
 
