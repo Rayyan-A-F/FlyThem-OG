@@ -204,7 +204,7 @@ if (resetAirline) {
         localStorage.removeItem("advanceDayCooldown");
         localStorage.removeItem("reputation");
 
-        window.location.href = "./start.html";
+        window.location.href = "./index.html";
     });
 }
 
@@ -296,7 +296,6 @@ async function loadAircraft() {
 
     createAircraftShop();
 }
-
 
 async function loadAirports() {
     const airportResponse = await fetch("./JSON/airports.json");
@@ -419,7 +418,6 @@ function createAirportOptions() {
         hubAirportSelect.value = savedHubAirport;
     }
 }
-
 
 function findAirport(airportCode) {
     return airport.find(function (airportData) {
@@ -746,7 +744,7 @@ function time() {
         return;
     }
 
-    const startingDate = "2026-10-06";
+    const startingDate = "2026-09-06";
 
     let gameDate = localStorage.getItem("gameDate");
 
